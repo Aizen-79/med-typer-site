@@ -1,1 +1,351 @@
-1
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* for fixed header */
+}
+
+/* RTL Support */
+html[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Header Section */
+header {
+    background: #6f4f29;
+    color: #fffae6;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+    display: flex;
+    gap: 8px;
+}
+
+.language-switcher img {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Navigation */
+nav {
+    /* default full width, centered */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fffae6;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #d18b6c;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 80px 20px;
+    background: #4e3629;
+}
+
+#home h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #fffae6;
+}
+
+#home p {
+    font-size: 18px;
+    color: #fffae6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    background-color: #d18b6c;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: #a6754f;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    background: #855c42;
+}
+
+#services h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #fffae6;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    background: #4e3629;
+    color: #fffae6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fffae6;
+}
+
+.service-price {
+    font-size: 18px;
+    color: #d18b6c;
+    margin-top: 10px;
+}
+
+/* About Us Section */
+#about {
+    padding: 60px 20px;
+    background: #855c42;
+    color: #fffae6;
+    animation: fadeIn 1s ease-out;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #fffae6;
+    margin-bottom: 20px;
+}
+
+/* Edited doctor names style */
+.doctor-names {
+    font-size: 18px; /* smaller than About Us */
+    font-weight: 600;
+    color: #d1aa6a; /* slightly darker gold */
+    letter-spacing: 1.5px; /* slightly decreased spacing */
+    margin-bottom: 10px; /* decreased spacing below */
+    text-transform: uppercase;
+}
+
+#about p {
+    font-size: 18px;
+    color: #fffae6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background: #6f4f29;
+    color: #fffae6;
+    text-align: center;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: slideIn 1s ease-out;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    background: #4e3629;
+    color: #fffae6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.copy-btn {
+    background-color: #d18b6c;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.copy-btn:hover,
+.copy-btn:focus {
+    background-color: #a6754f;
+}
+
+/* Footer */
+footer {
+    background: #4e3629;
+    color: #fffae6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        max-width: calc(100% - 110px); /* leave space for flags */
+        margin: 0 auto 0 0; /* align left with space on right */
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .service-item {
+        margin-bottom: 25px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    #services h2,
+    #about h2 {
+        font-size: 28px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .doctor-names {
+        font-size: 18px;
+    }
+}
+
+/* Language switcher flags */
+.language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+    display: flex;
+    gap: 8px;
+}
+
+.language-switcher img {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Keep phone numbers in LTR regardless of page direction */
+#contact .contact-box,
+#contact .contact-item p,
+#contact .copy-btn {
+    direction: ltr;
+    unicode-bidi: embed;
+    text-align: left;
+}
