@@ -349,3 +349,55 @@ footer {
     unicode-bidi: embed;
     text-align: left;
 }
+/* Payment Methods Section */
+#payment-methods {
+    padding: 60px 20px;
+    background-color: #4a311d; /* darker than contact, lighter than footer */
+    text-align: center;
+    color: #fffae6;
+}
+
+#payment-methods h2 {
+    font-size: 32px;
+    color: #fffae6;
+    margin-bottom: 30px;
+}
+
+.payment-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.payment-logos img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover; /* zoom effect inside fixed container */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.payment-logos img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #payment-methods h2 {
+        font-size: 26px;
+    }
+
+    .payment-logos {
+        gap: 15px;
+    }
+
+    .payment-logos img {
+        width: 120px;
+        height: 80px;
+        padding: 8px;
+    }
+}
