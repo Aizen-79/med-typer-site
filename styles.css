@@ -400,9 +400,19 @@ footer {
         height: 80px;
         padding: 8px;
     }
+.payment-logos img {
+  width: 150px;      /* box size */
+  height: 100px;
+  object-fit: contain;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
+
+/* Smaller image inside the same box for the 2nd item */
 .payment-logos img:nth-child(2) {
-  width: 120px; /* slightly smaller width */
-  height: 80px;  /* slightly smaller height */
-  object-fit: contain; /* to maintain aspect ratio without cropping */
+  padding: 15px;       /* more padding = image looks smaller */
+  object-fit: contain; /* keep aspect ratio */
 }
